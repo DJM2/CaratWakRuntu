@@ -4,22 +4,17 @@ html {
 
 $fondo: rgb(2, 2, 2);
 $principal:#f00;
-$cards:#fff;
+$secundario:#fba817;
 $wasa:#12c454;
 body {
-    background: linear-gradient(to bottom, #000000bd, #00000061), url(img/fondo-carta-digital-menu.jpg);
+    background: linear-gradient(to bottom, #000000bd, #00000061), url(img/fondo-waka-runtu.png)!important;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-
-/* .selectp {
-    font-size: 0.8em!important;
-} */
-
 .precioEnvio {
-    border-bottom: 1px dashed orange
+    border-bottom: 1px dashed orange;
 }
 
 .fondo {
@@ -36,7 +31,7 @@ body {
 
 .titulo {
     font-size: 2em;
-    color: $cards;
+    color: $secundario;
     text-align: center;
     padding-top: 2em;
 }
@@ -176,6 +171,9 @@ p {
     a {
         color: #000000;
         text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
     }
 }
 

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon-pikol.png" tipe="image/png">
-    <title>Carta Digital Waka RuntuL - Carnes y Cervezas</title>
+    <title>Carta Digital Waka Runtu - Carnes y Cervezas</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -21,34 +21,22 @@
     <div class="menu">
         <ul data-v-1c8fdb5a="" data-v-3eb1d840="" class="category-slider px-0" style="transform-origin: center top 0px;">
             <li data-v-1c8fdb5a="" class="category-slider__item rounded px-1 mx-1">
-                <div><a href="#pollos">Pollos</a> <span class="dot">♦</span></div>
+                <div><a href="#alitas">Alitas</a> <span class="dot">•</span></div>
             </li>
             <li data-v-1c8fdb5a="" class="category-slider__item rounded px-1 mx-1">
-                <div><a href="#criollos">Criollazos</a> <span class="dot">♦</span></div>
+                <div><a href="#parrillas">Parrillas</a> <span class="dot">•</span></div>
             </li>
             <li data-v-1c8fdb5a="" class="category-slider__item rounded px-1 mx-1">
-                <div><a href="#casa">Los de la casa</a> <span class="dot">♦</span></div>
+                <div><a href="#piqueos">Piqueos</a> <span class="dot">•</span></div>
             </li>
             <li data-v-1c8fdb5a="" class="category-slider__item rounded px-1 mx-1">
-                <div><a href="#sopas">Nuestras sopas</a> <span class="dot">♦</span></div>
+                <div><a href="#salchipapas">Salchipapas</a> <span class="dot">•</span></div>
             </li>
             <li data-v-1c8fdb5a="" class="category-slider__item rounded px-1 mx-1 category-slider__item--active">
-                <div><a href="#clasica">Cotelería clásica</a> <span class="dot">♦</span></div>
+                <div><a href="#adicionales">Adicionales</a> <span class="dot">•</span></div>
             </li>
             <li data-v-1c8fdb5a="" class="category-slider__item rounded px-1 mx-1">
-                <div><a href="#autor">Coctelería de autor</a> <span class="dot">♦</span></div>
-            </li>
-            <li data-v-1c8fdb5a="" class="category-slider__item rounded px-1 mx-1">
-                <div><a href="#infusiones">Infusiones </a><span class="dot">♦</span></div>
-            </li>
-            <li data-v-1c8fdb5a="" class="category-slider__item rounded px-1 mx-1">
-                <div><a href="#piteados">Té piteados</a> <span class="dot">♦</span></div>
-            </li>
-            <li data-v-1c8fdb5a="" class="category-slider__item rounded px-1 mx-1">
-                <div><a href="#artesanal">Cerveza artesanal</a> <span class="dot">♦</span></div>
-            </li>
-            <li data-v-1c8fdb5a="" class="category-slider__item rounded px-1 mx-1">
-                <div><a href="#refrescos">Refrescantes</a></div>
+                <div><a href="#bebidas">Bebidas</a> </div>
             </li>
         </ul>
     </div>
@@ -96,14 +84,58 @@
 
     <div class="container mt-4">
         <div class="platos row">
+            <!-----Alitas------>
             <div class="col-12">
-                <h2 id="pollos" class="titulo" style="padding-top: 0px;">Pollos</h2>
+                <h2 id="alitas" class="titulo" style="padding-top: 0px;">Alitas</h2>
                 <div class="subrayado"></div>
             </div>
             <div class="col-lg-6 plato">
                 <div class="row">
                     <div class="col-lg-6 col-sm-12">
-                        <img src="img/pollo-entero-pikol.png" alt="Pikol pollo entero">
+                        <img src="img/logo-waka-runtu.jpg" alt="Alitas djm2 Bufalo waka runtu">
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="row margin-left">
+                            <div class="col-12 pedido">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <span class="izq" id="bufalo">Búfalo:</span><br>
+                                        <span>Alitas con salsa agridulce picante con camote o papa frita.</span>
+                                        <select class="selectP cocai" name="cocai" id="cocai" onchange="updateGasText('coca', 'cocai', 'cocat', 'sub-coca', 'valor-coca', 5, 10, 15, 'num-coca')">
+                                            <option selected>...</option>
+                                            <option value="medioLitro">1/2 Litro</option>
+                                            <option value="Litro">Litro</option>
+                                            <option value="2Litros">2 Litros</option>
+                                        </select>
+                                        <span id="cocat" style="display: none;">0</span>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="der">s/.<span id="sub-coca">0</span></p>
+                                    </div>
+                                </div>
+                                <div class="linea" style="margin-top:1em"></div>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <div class="row">
+                                    <div class="col-6 d-flex dialog">
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('sub-coca','num-coca', 'valor-coca', 'sub-coca','valor-coca')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-coca" value="1">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('sub-coca','num-coca', 'valor-coca')"></span>
+                                    </div>
+                                    <div class="col-6 d-flex dialog">
+                                        <button class="enviarpedido" onclick="sumar('valor-coca','num-coca','cocat')">Agregar
+                                            s/.<span id="valor-coca">0</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 plato">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <img src="img/logo-waka-runtu.jpg" alt="Waka Runtu djm2 Bufalo">
 
                     </div>
                     <div class="col-lg-6 col-sm-12">
@@ -133,7 +165,7 @@
             <div class="col-lg-6 plato">
                 <div class="row">
                     <div class="col-lg-6 col-sm-12">
-                        <img src="img/medio-pollo-a-la-brasa-pikol.png" alt="Pikol medio pollo">
+                        <img src="img/logo-waka-runtu.jpg" alt="Pikol medio pollo">
                     </div>
                     <div class="col-lg-6 col-sm-12">
                         <div class="row margin-left">
