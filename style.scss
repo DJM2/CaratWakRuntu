@@ -13,8 +13,31 @@ body {
     background-size: cover;
 }
 
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    display: none;
+}
+
+.alert {
+    position: relative;
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    max-width: 90%;
+}
+
 .precioEnvio {
-    border-bottom: 1px dashed orange;
+    border-bottom: 1px dashed $secundario;
 }
 
 .fondo {
@@ -34,6 +57,7 @@ body {
     color: $secundario;
     text-align: center;
     padding-top: 2em;
+    letter-spacing: 0.1em;
 }
 
 .subrayado {
@@ -188,7 +212,7 @@ p {
         font-size: 16px;
         margin: auto;
         background: $principal;
-        color: #000;
+        color: #fff;
         padding: 0.6em;
         cursor: pointer;
     }
@@ -196,7 +220,7 @@ p {
         font-size: 16px;
         margin: auto;
         background: $principal;
-        color: #000;
+        color: #fff;
         padding: 0.6em;
         cursor: pointer;
     }
@@ -223,7 +247,7 @@ p {
         margin-bottom: 1.5em;
         transition: 0.4S;
         overflow: hidden;
-        background: $cards;
+        background: #fff;
         &:hover {
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             transition: 0.4S;
@@ -233,7 +257,7 @@ p {
         }
     }
     img {
-        height: auto;
+        height: 100%;
         width: 85%;
         margin-left: -12px;
         object-fit: cover;
@@ -257,11 +281,19 @@ p {
         float: left;
         font-size: 1.2em;
         font-weight: 400;
+        margin-top: -1.8em;
+    }
+    .izq2 {
+        font-size: 25px;
     }
     .der {
-        float: right;
         font-size: 1.6em;
         font-weight: 400;
+        float: right;
+        margin-right: 1em;
+    }
+    .descripcion {
+        font-size: 14px;
     }
     i {
         background: orange;
@@ -276,8 +308,9 @@ p {
 
 .selectP {
     border-radius: 4px;
-    font-size: 0.8em;
+    font-size: 16px;
     width: 100%;
+    margin-top: 0.8em;
 }
 
 .zoom {
@@ -325,6 +358,10 @@ p {
         .pedido {
             margin-top: 0;
         }
+        .der {
+            margin-top: 1em;
+            margin-left: 1em;
+        }
         .plato {
             img {
                 width: 400px;
@@ -332,6 +369,12 @@ p {
             }
             .margin-left {
                 margin-left: 0em;
+            }
+            .izq {
+                margin-top: 0.2em;
+            }
+            .descripcion {
+                display: inline-block;
             }
         }
     }

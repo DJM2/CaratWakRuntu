@@ -34,31 +34,48 @@ function decrementar(precio, num, valor) {
 var nTotal = 0;
 
 function sumar(precio, num, producto) {
-    var sumaTotal = parseFloat(document.getElementById(precio).innerHTML);
     var cantidad = parseFloat(document.getElementById(num).value);
-    var display = document.getElementById('display');
-    display.style.display = "block";
-    var valores = document.getElementById('valores');
-    var izq = document.getElementById(producto).innerHTML;
-    valores.innerHTML += '<br> ➤ ' + cantidad + '(' + izq + ')' + ' = s/.' + sumaTotal.toFixed(2);
+    if (cantidad === 0) {
+        var pop = document.getElementById('pop');
+        pop.style.display = "block";
+        var errorMessage = document.getElementById("error-message");
+        errorMessage.style.display = "block";
+        const closeButton = document.getElementById('close-alert');
 
-    //acumular precio
-    var precioTotal = parseFloat(document.getElementById('mtotal').innerHTML.replace('s/.', ''));
-    if (isNaN(precioTotal)) {
-        precioTotal = 0;
+        closeButton.addEventListener('click', () => {
+            errorMessage.style.display = 'none';
+            pop.style.display = 'none';
+        });
+        return;
+        /* alert('La cantidad no puede ser cero');
+        return; */ // salimos de la función si cantidad es cero
+    } else {
+        var sumaTotal = parseFloat(document.getElementById(precio).innerHTML);
+        var cantidad = parseFloat(document.getElementById(num).value);
+        var display = document.getElementById('display');
+        display.style.display = "block";
+        var valores = document.getElementById('valores');
+        var izq = document.getElementById(producto).innerHTML;
+        valores.innerHTML += '<br> ➤ ' + cantidad + '(' + izq + ')' + ' = s/.' + sumaTotal.toFixed(2);
+
+        //acumular precio
+        var precioTotal = parseFloat(document.getElementById('mtotal').innerHTML.replace('s/.', ''));
+        if (isNaN(precioTotal)) {
+            precioTotal = 0;
+        }
+        var nuevoTotal = precioTotal + sumaTotal;
+        document.getElementById('mtotal').innerHTML = 's/.' + nuevoTotal.toFixed(2);
+
+        // acumular cantidad en nTotal
+        nTotal += cantidad;
+        document.getElementById('numeroT').innerHTML = nTotal;
+        numeroT.classList.remove('rezoom');
+        numeroT.classList.add('zoom');
+        setTimeout(function() {
+            numeroT.classList.remove('zoom');
+            numeroT.classList.add('rezoom');
+        }, 400);
     }
-    var nuevoTotal = precioTotal + sumaTotal;
-    document.getElementById('mtotal').innerHTML = 's/.' + nuevoTotal.toFixed(2);
-
-    // acumular cantidad en nTotal
-    nTotal += cantidad;
-    document.getElementById('numeroT').innerHTML = nTotal;
-    numeroT.classList.remove('rezoom');
-    numeroT.classList.add('zoom');
-    setTimeout(function() {
-        numeroT.classList.remove('zoom');
-        numeroT.classList.add('rezoom');
-    }, 400);
 }
 
 function pedido() {
@@ -88,7 +105,7 @@ function wasa() {
 
     var mtotal = document.getElementById("mtotal-pop").innerHTML.trim();
 
-    var telefono = "51935736496";
+    var telefono = "51921135755";
     var mensaje = "Hola Pikol, mi pedido es el siguiente:\n" + valores + "\n\nTotal: " + mtotal;
     var url = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
     window.open(url);
@@ -138,11 +155,31 @@ function updateLimonadaText(limonadaId, selectId, resultId, sub, valor, precioV,
         texto.innerHTML = `${infusionText} ${event.target.value}`;
     });
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    chanchito("chanchito", "chanchitoi", "chanchitot", "sub-chanchito", "valor-chanchito", 24, 27, "num-chanchito");
+});
+
+function chanchito(limonadaId, selectId, resultId, sub, valor, precioV, precioJ, numId) {
+    const selectElement = document.getElementById(selectId);
+    selectElement.addEventListener("change", (event) => {
+        const infusionText = document.getElementById(limonadaId).innerHTML;
+        const resultado = document.getElementById(sub);
+        const valorT = document.getElementById(valor);
+        const precio = (event.target.value === "Con tamal") ? precioJ : precioV;
+        const valorUnidad = parseInt(document.getElementById(numId).value);
+        const valorTotal = valorUnidad * precio;
+        resultado.innerHTML = precio;
+        valorT.innerHTML = valorTotal;
+        const texto = document.getElementById(resultId);
+        texto.innerHTML = `${infusionText} ${event.target.value}`;
+    });
+}
 //Gaseosas
 
 document.addEventListener("DOMContentLoaded", function() {
-    updateGasText("coca", "cocai", "cocat", "sub-coca", "valor-coca", 5, 10, 15, "num-coca");
-    updateGasText("inka", "inkai", "inkat", "sub-inka", "valor-inka", 5, 10, 15, "num-inka");
+    updateGasText("bufalo", "bufaloi", "bufalot", "sub-bufalo", "valor-bufalo", 15, 21, 27, "num-bufalo");
+    updateGasText("bbq", "bbqi", "bbqt", "sub-bbq", "valor-bbq", 15, 21, 27, "num-bbq");
 });
 
 function updateGasText(limonadaId, selectId, resultId, sub, valor, precioV, precioJ, precioK, numId) {
@@ -152,14 +189,14 @@ function updateGasText(limonadaId, selectId, resultId, sub, valor, precioV, prec
         const resultado = document.getElementById(sub);
         const valorT = document.getElementById(valor);
         let precio;
-        if (event.target.value === "medioLitro") {
-            valueText = "1/2 Litro";
+        if (event.target.value === "x6") {
+            valueText = "x6";
             precio = precioV;
-        } else if (event.target.value === "Litro") {
-            valueText = "Litro";
+        } else if (event.target.value === "x9") {
+            valueText = "x9";
             precio = precioJ;
-        } else if (event.target.value === "2Litros") {
-            valueText = "2 Litros";
+        } else if (event.target.value === "x12") {
+            valueText = "x12";
             precio = precioK;
         }
         const valorUnidad = parseInt(document.getElementById(numId).value);

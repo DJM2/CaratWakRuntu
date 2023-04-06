@@ -9,8 +9,31 @@ body {
   background-size: cover;
 }
 
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  display: none;
+}
+
+.alert {
+  position: relative;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  max-width: 90%;
+}
+
 .precioEnvio {
-  border-bottom: 1px dashed orange;
+  border-bottom: 1px dashed #fba817;
 }
 
 .fondo {
@@ -27,9 +50,10 @@ body {
 
 .titulo {
   font-size: 2em;
-  color: #fff;
+  color: #fba817;
   text-align: center;
   padding-top: 2em;
+  letter-spacing: 0.1em;
 }
 
 .subrayado {
@@ -185,7 +209,7 @@ p {
   font-size: 16px;
   margin: auto;
   background: #f00;
-  color: #000;
+  color: #fff;
   padding: 0.6em;
   cursor: pointer;
 }
@@ -193,7 +217,7 @@ p {
   font-size: 16px;
   margin: auto;
   background: #f00;
-  color: #000;
+  color: #fff;
   padding: 0.6em;
   cursor: pointer;
 }
@@ -230,11 +254,10 @@ p {
   margin-left: -4em;
 }
 .platos img {
-  height: auto;
+  height: 100%;
   width: 85%;
   margin-left: -12px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .platos .pedido {
   position: relative;
@@ -255,11 +278,19 @@ p {
   float: left;
   font-size: 1.2em;
   font-weight: 400;
+  margin-top: -1.8em;
+}
+.platos .izq2 {
+  font-size: 25px;
 }
 .platos .der {
-  float: right;
   font-size: 1.6em;
   font-weight: 400;
+  float: right;
+  margin-right: 1em;
+}
+.platos .descripcion {
+  font-size: 14px;
 }
 .platos i {
   background: orange;
@@ -273,8 +304,9 @@ p {
 
 .selectP {
   border-radius: 4px;
-  font-size: 0.8em;
+  font-size: 16px;
   width: 100%;
+  margin-top: 0.8em;
 }
 
 .zoom {
@@ -323,6 +355,10 @@ p {
   .platos .pedido {
     margin-top: 0;
   }
+  .platos .der {
+    margin-top: 1em;
+    margin-left: 1em;
+  }
   .platos .plato img {
     width: 400px;
     height: 200px;
@@ -330,10 +366,18 @@ p {
   .platos .plato .margin-left {
     margin-left: 0em;
   }
+  .platos .plato .izq {
+    margin-top: 0.2em;
+  }
+  .platos .plato .descripcion {
+    display: inline-block;
+  }
   dialog {
     width: 100%;
   }
   dialog dialog .enviarpedido {
     margin-top: 1em;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
