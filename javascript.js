@@ -91,6 +91,20 @@ function pedido() {
     const preciopop = document.getElementById("mtotal-pop");
     preciopop.innerHTML = '\n' + precio;
 }
+function pedidol() {
+    const valores = document.getElementById("valores").innerHTML;
+    const valorespop = document.getElementById("valores-pop");
+
+    const valoresConSaltos = valores.replace(/<br>/g, '\n');
+
+    const valorespopConSaltos = valorespop.innerHTML + '\n' + valoresConSaltos;
+
+    valorespop.innerHTML = valorespopConSaltos.split('\n').map(val => val.trim() !== '' ? `<br>${val}` : '').join('');
+
+    const precio = document.getElementById("mtotal").innerHTML;
+    const preciopop = document.getElementById("mtotal-pop");
+    preciopop.innerHTML = '\n' + precio;
+}
 
 
 
