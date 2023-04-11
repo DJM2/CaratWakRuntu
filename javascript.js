@@ -33,22 +33,21 @@ function decrementar(precio, num, valor) {
 //Sumar
 var nTotal = 0;
 
+function cerrarpop() {
+    const pop = document.getElementById('pop');
+    pop.style.display = 'none';
+    const errorMessage = document.getElementById("error-message");
+    errorMessage.style.display = 'block';
+}
+
 function sumar(precio, num, producto) {
     var cantidad = parseFloat(document.getElementById(num).value);
     if (cantidad === 0) {
         var pop = document.getElementById('pop');
         pop.style.display = "block";
-        var errorMessage = document.getElementById("error-message");
-        errorMessage.style.display = "block";
-        const closeButton = document.getElementById('close-alert');
-
-        closeButton.addEventListener('click', () => {
-            errorMessage.style.display = 'none';
-            pop.style.display = 'none';
-        });
+        const errorMessage = document.getElementById("error-message");
+        errorMessage.style.display = 'block';
         return;
-        /* alert('La cantidad no puede ser cero');
-        return; */ // salimos de la función si cantidad es cero
     } else {
         var sumaTotal = parseFloat(document.getElementById(precio).innerHTML);
         var cantidad = parseFloat(document.getElementById(num).value);
