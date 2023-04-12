@@ -78,6 +78,7 @@ body {
     text-align: center;
     padding-top: 2em;
     letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 .subrayado {
@@ -198,6 +199,7 @@ p {
     list-style: none;
     margin-bottom: 0;
     justify-content: center;
+    border-bottom: 1px solid red;
 }
 
 .category-slider__item[data-v-1c8fdb5a] {

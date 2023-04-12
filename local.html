@@ -9,11 +9,8 @@
     <title>Carta Digital Waka Runtu - Carnes y Cervezas</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -29,8 +26,7 @@
         <img src="img/logo-waka-runtu.jpg" class="img-pikol" alt="">
     </div>
     <div class="menu">
-        <ul data-v-1c8fdb5a="" data-v-3eb1d840="" class="category-slider px-0"
-            style="transform-origin: center top 0px;">
+        <ul data-v-1c8fdb5a="" data-v-3eb1d840="" class="category-slider px-0" style="transform-origin: center top 0px;">
             <li data-v-1c8fdb5a="" class="category-slider__item rounded px-1 mx-1">
                 <div><a href="#alitas">Alitas</a> <span class="dot">•</span></div>
             </li>
@@ -113,8 +109,7 @@
                                         <span class="izq" id="bufalo">Búfalo:</span>
                                         <span class="descripcion">Alitas con salsa agridulce picante con camote o papa
                                             frita.</span>
-                                        <select class="selectP bufaloi" name="bufaloi" id="bufaloi"
-                                            onchange="updateGasText('bufalo', 'bufaloi', 'bufalot', 'sub-bufalo', 'valor-bufalo', 15, 21, 27, 'num-bufalo')">
+                                        <select class="selectP bufaloi" name="bufaloi" id="bufaloi" onchange="updateGasText('bufalo', 'bufaloi', 'bufalot', 'sub-bufalo', 'valor-bufalo', 15, 21, 27, 'num-bufalo')">
                                             <option selected>Selccionar porción</option>
                                             <option value="x6">x6</option>
                                             <option value="x9">x9</option>
@@ -131,16 +126,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('sub-bufalo','num-bufalo', 'valor-bufalo', 'sub-bufalo','valor-bufalo')"></span>
-                                        <input type="text" class="form-control input" readonly id="num-bufalo"
-                                            value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('sub-bufalo','num-bufalo', 'valor-bufalo')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('sub-bufalo','num-bufalo', 'valor-bufalo', 'sub-bufalo','valor-bufalo')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-bufalo" value="0">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('sub-bufalo','num-bufalo', 'valor-bufalo')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-bufalo','num-bufalo','bufalot')">Agregar
+                                        <button class="enviarpedido" onclick="sumar('valor-bufalo','num-bufalo','bufalot')">Agregar
                                             s/.<span id="valor-bufalo">0.00</span></button>
                                     </div>
                                 </div>
@@ -161,8 +152,7 @@
                                     <div class="col-8">
                                         <span class="izq" id="bbq">BBQ:</span>
                                         <span class="descripcion">Alitas con salsa BBQ con papas fritas.</span>
-                                        <select class="selectP bbqi" name="bbqi" id="bbqi"
-                                            onchange="updateGasText('bbq', 'bbqi', 'bbqt', 'sub-bbq', 'valor-bbq', 15, 21, 27, 'num-bbq')">
+                                        <select class="selectP bbqi" name="bbqi" id="bbqi" onchange="updateGasText('bbq', 'bbqi', 'bbqt', 'sub-bbq', 'valor-bbq', 15, 21, 27, 'num-bbq')">
                                             <option selected>Seleccionar porción</option>
                                             <option value="x6">x6</option>
                                             <option value="x9">x9</option>
@@ -179,15 +169,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('sub-bbq','num-bbq', 'valor-bbq', 'sub-bbq','valor-bbq')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('sub-bbq','num-bbq', 'valor-bbq', 'sub-bbq','valor-bbq')"></span>
                                         <input type="text" class="form-control input" readonly id="num-bbq" value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('sub-bbq','num-bbq', 'valor-bbq')"></span>
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('sub-bbq','num-bbq', 'valor-bbq')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-bbq','num-bbq','bbqt')">Agregar
+                                        <button class="enviarpedido" onclick="sumar('valor-bbq','num-bbq','bbqt')">Agregar
                                             s/.<span id="valor-bbq">0.00</span></button>
                                     </div>
                                 </div>
@@ -211,16 +198,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('subtotal-crispy','num-crispy', 'valor-crispy')"></span>
-                                        <input type="text" class="form-control input" readonly id="num-crispy"
-                                            value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('subtotal-crispy','num-crispy', 'valor-crispy')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('subtotal-crispy','num-crispy', 'valor-crispy')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-crispy" value="0">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('subtotal-crispy','num-crispy', 'valor-crispy')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-crispy','num-crispy','crispy')">Agregar
+                                        <button class="enviarpedido" onclick="sumar('valor-crispy','num-crispy','crispy')">Agregar
                                             s/.<span id="valor-crispy">0.00</span></button>
                                     </div>
                                 </div>
@@ -244,16 +227,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('subtotal-ceviche','num-ceviche', 'valor-ceviche')"></span>
-                                        <input type="text" class="form-control input" readonly id="num-ceviche"
-                                            value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('subtotal-ceviche','num-ceviche', 'valor-ceviche')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('subtotal-ceviche','num-ceviche', 'valor-ceviche')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-ceviche" value="0">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('subtotal-ceviche','num-ceviche', 'valor-ceviche')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-ceviche','num-ceviche','ceviche')">Agregar s/.<span
+                                        <button class="enviarpedido" onclick="sumar('valor-ceviche','num-ceviche','ceviche')">Agregar s/.<span
                                                 id="valor-ceviche">0.00</span></button>
                                     </div>
                                 </div>
@@ -288,16 +267,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('sub-estaciones1','num-estaciones1', 'valor-estaciones1')"></span>
-                                        <input type="text" class="form-control input" readonly id="num-estaciones1"
-                                            value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('sub-estaciones1','num-estaciones1', 'valor-estaciones1')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('sub-estaciones1','num-estaciones1', 'valor-estaciones1')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-estaciones1" value="0">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('sub-estaciones1','num-estaciones1', 'valor-estaciones1')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-estaciones1','num-estaciones1','estaciones1')">Agregar
+                                        <button class="enviarpedido" onclick="sumar('valor-estaciones1','num-estaciones1','estaciones1')">Agregar
                                             s/.<span id="valor-estaciones1">0.00</span></button>
                                     </div>
                                 </div>
@@ -331,16 +306,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('sub-estaciones2','num-estaciones2', 'valor-estaciones2')"></span>
-                                        <input type="text" class="form-control input" readonly id="num-estaciones2"
-                                            value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('sub-estaciones2','num-estaciones2', 'valor-estaciones2')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('sub-estaciones2','num-estaciones2', 'valor-estaciones2')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-estaciones2" value="0">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('sub-estaciones2','num-estaciones2', 'valor-estaciones2')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-estaciones2','num-estaciones2','estaciones2')">Agregar
+                                        <button class="enviarpedido" onclick="sumar('valor-estaciones2','num-estaciones2','estaciones2')">Agregar
                                             s/.<span id="valor-estaciones2">0.00</span></button>
                                     </div>
                                 </div>
@@ -349,7 +320,6 @@
                     </div>
                 </div>
             </div>
-
 
             <!----P a r r i l l a s-->
             <div class="col-lg-12">
@@ -382,16 +352,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('sub-familiarw','num-familiarw', 'valor-familiarw')"></span>
-                                        <input type="text" class="form-control input" readonly id="num-familiarw"
-                                            value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('sub-familiarw','num-familiarw', 'valor-familiarw')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('sub-familiarw','num-familiarw', 'valor-familiarw')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-familiarw" value="0">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('sub-familiarw','num-familiarw', 'valor-familiarw')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-familiarw','num-familiarw','familiarw')">Agregar
+                                        <button class="enviarpedido" onclick="sumar('valor-familiarw','num-familiarw','familiarw')">Agregar
                                             s/.<span id="valor-familiarw">0.00</span></button>
                                     </div>
                                 </div>
@@ -426,16 +392,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('sub-familiars','num-familiars', 'valor-familiars')"></span>
-                                        <input type="text" class="form-control input" readonly id="num-familiars"
-                                            value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('sub-familiars','num-familiars', 'valor-familiars')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('sub-familiars','num-familiars', 'valor-familiars')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-familiars" value="0">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('sub-familiars','num-familiars', 'valor-familiars')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-familiars','num-familiars','familiars')">Agregar
+                                        <button class="enviarpedido" onclick="sumar('valor-familiars','num-familiars','familiars')">Agregar
                                             s/.<span id="valor-familiars">0.00</span></button>
                                     </div>
                                 </div>
@@ -470,16 +432,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('sub-familiar','num-familiar', 'valor-familiar')"></span>
-                                        <input type="text" class="form-control input" readonly id="num-familiar"
-                                            value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('sub-familiar','num-familiar', 'valor-familiar')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('sub-familiar','num-familiar', 'valor-familiar')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-familiar" value="0">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('sub-familiar','num-familiar', 'valor-familiar')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-familiar','num-familiar','familiar')">Agregar
+                                        <button class="enviarpedido" onclick="sumar('valor-familiar','num-familiar','familiar')">Agregar
                                             s/.<span id="valor-familiar">0.00</span></button>
                                     </div>
                                 </div>
@@ -514,16 +472,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('sub-personal','num-personal', 'valor-personal')"></span>
-                                        <input type="text" class="form-control input" readonly id="num-personal"
-                                            value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('sub-personal','num-personal', 'valor-personal')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('sub-personal','num-personal', 'valor-personal')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-personal" value="0">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('sub-personal','num-personal', 'valor-personal')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-personal','num-personal','personal')">Agregar
+                                        <button class="enviarpedido" onclick="sumar('valor-personal','num-personal','personal')">Agregar
                                             s/.<span id="valor-personal">0.00</span></button>
                                     </div>
                                 </div>
@@ -553,15 +507,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('sub-anti','num-anti', 'valor-anti')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('sub-anti','num-anti', 'valor-anti')"></span>
                                         <input type="text" class="form-control input" readonly id="num-anti" value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('sub-anti','num-anti', 'valor-anti')"></span>
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('sub-anti','num-anti', 'valor-anti')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-anti','num-anti','anti')">Agregar
+                                        <button class="enviarpedido" onclick="sumar('valor-anti','num-anti','anti')">Agregar
                                             s/.<span id="valor-anti">0.00</span></button>
                                     </div>
                                 </div>
@@ -585,15 +536,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('sub-teque','num-teque', 'valor-teque')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('sub-teque','num-teque', 'valor-teque')"></span>
                                         <input type="text" class="form-control input" readonly id="num-teque" value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('sub-teque','num-teque', 'valor-teque')"></span>
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('sub-teque','num-teque', 'valor-teque')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-teque','num-teque','teque')">Agregar
+                                        <button class="enviarpedido" onclick="sumar('valor-teque','num-teque','teque')">Agregar
                                             s/.<span id="valor-teque">0.00</span></button>
                                     </div>
                                 </div>
@@ -621,8 +569,7 @@
                                         <span class="izq" id="chanchito">Chanchito WakaRuntu:</span>
                                         <span class="descripcion">Panceta de cerdo crocante por fuera y jugosa por
                                             dentro, acompañada de papas, camote y ensalada fresca.</span>
-                                        <select class="selectP chanchitoi" name="chanchitoi" id="chanchitoi"
-                                            onchange="chanchito('chanchito', 'chanchitoi', 'chanchitot', 'sub-chanchito', 'valor-chanchito', 24, 27, 'num-chanchito')">
+                                        <select class="selectP chanchitoi" name="chanchitoi" id="chanchitoi" onchange="chanchito('chanchito', 'chanchitoi', 'chanchitot', 'sub-chanchito', 'valor-chanchito', 24, 27, 'num-chanchito')">
                                             <option selected>¿Deseas tamal?</option>
                                             <option value="Sin tamal">Sin tamal</option>
                                             <option value="Con tamal">Con Tamal</option>
@@ -638,16 +585,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('sub-chanchito','num-chanchito', 'valor-chanchito', 'sub-chanchito','valor-chanchito')"></span>
-                                        <input type="text" class="form-control input" readonly id="num-chanchito"
-                                            value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('sub-chanchito','num-chanchito', 'valor-chanchito')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('sub-chanchito','num-chanchito', 'valor-chanchito', 'sub-chanchito','valor-chanchito')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-chanchito" value="0">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('sub-chanchito','num-chanchito', 'valor-chanchito')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-chanchito','num-chanchito','chanchitot')">Agregar
+                                        <button class="enviarpedido" onclick="sumar('valor-chanchito','num-chanchito','chanchitot')">Agregar
                                             s/.<span id="valor-chanchito">0</span></button>
                                     </div>
                                 </div>
@@ -679,16 +622,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('sub-grilla','num-grilla', 'valor-grilla')"></span>
-                                        <input type="text" class="form-control input" readonly id="num-grilla"
-                                            value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('sub-grilla','num-grilla', 'valor-grilla')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('sub-grilla','num-grilla', 'valor-grilla')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-grilla" value="0">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('sub-grilla','num-grilla', 'valor-grilla')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-grilla','num-grilla','grilla')">Agregar
+                                        <button class="enviarpedido" onclick="sumar('valor-grilla','num-grilla','grilla')">Agregar
                                             s/.<span id="valor-grilla">0.00</span></button>
                                     </div>
                                 </div>
@@ -720,16 +659,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('sub-milaneza','num-milaneza', 'valor-milaneza')"></span>
-                                        <input type="text" class="form-control input" readonly id="num-milaneza"
-                                            value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('sub-milaneza','num-milaneza', 'valor-milaneza')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('sub-milaneza','num-milaneza', 'valor-milaneza')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-milaneza" value="0">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('sub-milaneza','num-milaneza', 'valor-milaneza')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-milaneza','num-milaneza','milaneza')">Agregar
+                                        <button class="enviarpedido" onclick="sumar('valor-milaneza','num-milaneza','milaneza')">Agregar
                                             s/.<span id="valor-milaneza">0.00</span></button>
                                     </div>
                                 </div>
@@ -761,15 +696,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('sub-phuti','num-phuti', 'valor-phuti')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('sub-phuti','num-phuti', 'valor-phuti')"></span>
                                         <input type="text" class="form-control input" readonly id="num-phuti" value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('sub-phuti','num-phuti', 'valor-phuti')"></span>
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('sub-phuti','num-phuti', 'valor-phuti')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-phuti','num-phuti','phuti')">Agregar
+                                        <button class="enviarpedido" onclick="sumar('valor-phuti','num-phuti','phuti')">Agregar
                                             s/.<span id="valor-phuti">0.00</span></button>
                                     </div>
                                 </div>
@@ -806,15 +738,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('sub-salchi','num-salchi', 'valor-salchi')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('sub-salchi','num-salchi', 'valor-salchi')"></span>
                                         <input type="text" class="form-control input" readonly id="num-salchi" value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('sub-salchi','num-salchi', 'valor-salchi')"></span>
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('sub-salchi','num-salchi', 'valor-salchi')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-salchi','num-salchi','salchi')">Agregar
+                                        <button class="enviarpedido" onclick="sumar('valor-salchi','num-salchi','salchi')">Agregar
                                             s/.<span id="valor-salchi">0.00</span></button>
                                     </div>
                                 </div>
@@ -845,15 +774,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('sub-salchipollo','num-salchipollo', 'valor-salchpollo')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('sub-salchipollo','num-salchipollo', 'valor-salchpollo')"></span>
                                         <input type="text" class="form-control input" readonly id="num-salchipollo" value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('sub-salchipollo','num-salchipollo', 'valor-salchipollo')"></span>
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('sub-salchipollo','num-salchipollo', 'valor-salchipollo')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-salchipollo','num-salchipollo','salchipollo')">Agregar
+                                        <button class="enviarpedido" onclick="sumar('valor-salchipollo','num-salchipollo','salchipollo')">Agregar
                                             s/.<span id="valor-salchipollo">0.00</span></button>
                                     </div>
                                 </div>
@@ -884,15 +810,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('sub-chori','num-chori', 'valor-chori')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('sub-chori','num-chori', 'valor-chori')"></span>
                                         <input type="text" class="form-control input" readonly id="num-chori" value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('sub-chori','num-chori', 'valor-chori')"></span>
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('sub-chori','num-chori', 'valor-chori')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-chori','num-chori','chori')">Agregar
+                                        <button class="enviarpedido" onclick="sumar('valor-chori','num-chori','chori')">Agregar
                                             s/.<span id="valor-chori">0.00</span></button>
                                     </div>
                                 </div>
@@ -923,15 +846,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('sub-mollejas','num-mollejas', 'valor-mollejas')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('sub-mollejas','num-mollejas', 'valor-mollejas')"></span>
                                         <input type="text" class="form-control input" readonly id="num-mollejas" value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('sub-mollejas','num-mollejas', 'valor-mollejas')"></span>
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('sub-mollejas','num-mollejas', 'valor-mollejas')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-mollejas','num-mollejas','mollejas')">Agregar
+                                        <button class="enviarpedido" onclick="sumar('valor-mollejas','num-mollejas','mollejas')">Agregar
                                             s/.<span id="valor-mollejas">0.00</span></button>
                                     </div>
                                 </div>
@@ -962,15 +882,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('sub-salchipapas','num-salchipapas', 'valor-salchipapas')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('sub-salchipapas','num-salchipapas', 'valor-salchipapas')"></span>
                                         <input type="text" class="form-control input" readonly id="num-salchipapas" value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('sub-salchipapas','num-salchipapas', 'valor-salchipapas')"></span>
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('sub-salchipapas','num-salchipapas', 'valor-salchipapas')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-salchipapas','num-salchipapas','salchipapas')">Agregar
+                                        <button class="enviarpedido" onclick="sumar('valor-salchipapas','num-salchipapas','salchipapas')">Agregar
                                             s/.<span id="valor-salchipapas">0.00</span></button>
                                     </div>
                                 </div>
@@ -999,16 +916,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('subtotal-papas','num-papas', 'valor-papas')"></span>
-                                        <input type="text" class="form-control input" readonly id="num-papas"
-                                            value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('subtotal-papas','num-papas', 'valor-papas')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('subtotal-papas','num-papas', 'valor-papas')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-papas" value="0">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('subtotal-papas','num-papas', 'valor-papas')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-papas','num-papas','papas')">Agregar s/.<span
+                                        <button class="enviarpedido" onclick="sumar('valor-papas','num-papas','papas')">Agregar s/.<span
                                                 id="valor-papas">0.00</span></button>
                                     </div>
                                 </div>
@@ -1032,16 +945,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('subtotal-camote','num-camote', 'valor-camote')"></span>
-                                        <input type="text" class="form-control input" readonly id="num-camote"
-                                            value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('subtotal-camote','num-camote', 'valor-camote')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('subtotal-camote','num-camote', 'valor-camote')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-camote" value="0">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('subtotal-camote','num-camote', 'valor-camote')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-camote','num-camote','camote')">Agregar s/.<span
+                                        <button class="enviarpedido" onclick="sumar('valor-camote','num-camote','camote')">Agregar s/.<span
                                                 id="valor-camote">0.00</span></button>
                                     </div>
                                 </div>
@@ -1065,16 +974,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('subtotal-camote','num-camote', 'valor-camote')"></span>
-                                        <input type="text" class="form-control input" readonly id="num-camote"
-                                            value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('subtotal-camote','num-camote', 'valor-camote')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('subtotal-camote','num-camote', 'valor-camote')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-camote" value="0">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('subtotal-camote','num-camote', 'valor-camote')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-camote','num-camote','camote')">Agregar s/.<span
+                                        <button class="enviarpedido" onclick="sumar('valor-camote','num-camote','camote')">Agregar s/.<span
                                                 id="valor-camote">0.00</span></button>
                                     </div>
                                 </div>
@@ -1098,16 +1003,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('subtotal-arroz','num-arroz', 'valor-arroz')"></span>
-                                        <input type="text" class="form-control input" readonly id="num-arroz"
-                                            value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('subtotal-arroz','num-arroz', 'valor-arroz')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('subtotal-arroz','num-arroz', 'valor-arroz')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-arroz" value="0">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('subtotal-arroz','num-arroz', 'valor-arroz')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-arroz','num-arroz','arroz')">Agregar s/.<span
+                                        <button class="enviarpedido" onclick="sumar('valor-arroz','num-arroz','arroz')">Agregar s/.<span
                                                 id="valor-arroz">0.00</span></button>
                                     </div>
                                 </div>
@@ -1131,16 +1032,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('subtotal-panajo','num-panajo', 'valor-panajo')"></span>
-                                        <input type="text" class="form-control input" readonly id="num-panajo"
-                                            value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('subtotal-panajo','num-panajo', 'valor-panajo')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('subtotal-panajo','num-panajo', 'valor-panajo')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-panajo" value="0">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('subtotal-panajo','num-panajo', 'valor-panajo')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-panajo','num-panajo','panajo')">Agregar s/.<span
+                                        <button class="enviarpedido" onclick="sumar('valor-panajo','num-panajo','panajo')">Agregar s/.<span
                                                 id="valor-panajo">0.00</span></button>
                                     </div>
                                 </div>
@@ -1164,16 +1061,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('subtotal-addsalchi','num-addsalchi', 'valor-addsalchi')"></span>
-                                        <input type="text" class="form-control input" readonly id="num-addsalchi"
-                                            value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('subtotal-addsalchi','num-addsalchi', 'valor-addsalchi')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('subtotal-addsalchi','num-addsalchi', 'valor-addsalchi')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-addsalchi" value="0">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('subtotal-addsalchi','num-addsalchi', 'valor-addsalchi')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-addsalchi','num-addsalchi','addsalchi')">Agregar s/.<span
+                                        <button class="enviarpedido" onclick="sumar('valor-addsalchi','num-addsalchi','addsalchi')">Agregar s/.<span
                                                 id="valor-addsalchi">0.00</span></button>
                                     </div>
                                 </div>
@@ -1197,16 +1090,12 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('subtotal-addchori','num-addchori', 'valor-addchori')"></span>
-                                        <input type="text" class="form-control input" readonly id="num-addchori"
-                                            value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('subtotal-addchori','num-addchori', 'valor-addchori')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('subtotal-addchori','num-addchori', 'valor-addchori')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-addchori" value="0">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('subtotal-addchori','num-addchori', 'valor-addchori')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-addchori','num-addchori','addchori')">Agregar s/.<span
+                                        <button class="enviarpedido" onclick="sumar('valor-addchori','num-addchori','addchori')">Agregar s/.<span
                                                 id="valor-addchori">0.00</span></button>
                                     </div>
                                 </div>
@@ -1215,8 +1104,6 @@
                     </div>
                 </div>
             </div>
-            
-
             <!------ B e b i d a s ------>
             <div class="col-lg-12">
                 <h2 id="bebidas" class="titulo">Bebidas</h2>
@@ -1237,17 +1124,129 @@
                             <div class="col-12 mt-2">
                                 <div class="row">
                                     <div class="col-6 d-flex dialog">
-                                        <span class="fa-solid fa-minus" id="decremento"
-                                            onclick="decrementar('subtotal-artesanal','num-artesanal', 'valor-artesanal')"></span>
-                                        <input type="text" class="form-control input" readonly id="num-artesanal"
-                                            value="0">
-                                        <span class="fa-solid fa-plus" id="botonactivo"
-                                            onclick="incrementar('subtotal-artesanal','num-artesanal', 'valor-artesanal')"></span>
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('subtotal-artesanal','num-artesanal', 'valor-artesanal')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-artesanal" value="0">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('subtotal-artesanal','num-artesanal', 'valor-artesanal')"></span>
                                     </div>
                                     <div class="col-6 d-flex dialog">
-                                        <button class="enviarpedido"
-                                            onclick="sumar('valor-artesanal','num-artesanal','artesanal')">Agregar s/.<span
+                                        <button class="enviarpedido" onclick="sumar('valor-artesanal','num-artesanal','artesanal')">Agregar s/.<span
                                                 id="valor-artesanal">0.00</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 plato">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <img src="img/logo-waka-runtu.jpg" alt="Te piteado djm2">
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="row margin-left">
+                            <div class="col-12 pedido">
+                                <span class="izq2" id="piteado">Té piteado</span>
+                                <p class="der">s/.<span id="subtotal-piteado">8.50</span></p>
+                                <div class="linea"></div>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <div class="row">
+                                    <div class="col-6 d-flex dialog">
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('subtotal-piteado','num-piteado', 'valor-piteado')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-piteado" value="0">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('subtotal-piteado','num-piteado', 'valor-piteado')"></span>
+                                    </div>
+                                    <div class="col-6 d-flex dialog">
+                                        <button class="enviarpedido" onclick="sumar('valor-piteado','num-piteado','piteado')">Agregar s/.<span
+                                                id="valor-piteado">0.00</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 plato">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <img src="img/logo-waka-runtu.jpg" alt="Cafe djm2">
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="row margin-left">
+                            <div class="col-12 pedido">
+                                <span class="izq2" id="cafe">Café</span>
+                                <p class="der">s/.<span id="subtotal-cafe">5.00</span></p>
+                                <div class="linea"></div>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <div class="row">
+                                    <div class="col-6 d-flex dialog">
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('subtotal-cafe','num-cafe', 'valor-cafe')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-cafe" value="0">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('subtotal-cafe','num-cafe', 'valor-cafe')"></span>
+                                    </div>
+                                    <div class="col-6 d-flex dialog">
+                                        <button class="enviarpedido" onclick="sumar('valor-cafe','num-cafe','cafe')">Agregar s/.<span
+                                                id="valor-cafe">0.00</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 plato">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <img src="img/logo-waka-runtu.jpg" alt="Cafe djm2">
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="row margin-left">
+                            <div class="col-12 pedido">
+                                <span class="izq2" id="tes">Té o mates</span>
+                                <p class="der">s/.<span id="subtotal-tes">4.00</span></p>
+                                <div class="linea"></div>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <div class="row">
+                                    <div class="col-6 d-flex dialog">
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('subtotal-tes','num-tes', 'valor-tes')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-tes" value="0">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('subtotal-tes','num-tes', 'valor-tes')"></span>
+                                    </div>
+                                    <div class="col-6 d-flex dialog">
+                                        <button class="enviarpedido" onclick="sumar('valor-tes','num-tes','tes')">Agregar s/.<span
+                                                id="valor-tes">0.00</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 plato">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <img src="img/logo-waka-runtu.jpg" alt="Cafe djm2">
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="row margin-left">
+                            <div class="col-12 pedido">
+                                <span class="izq2" id="refresh">Refresco Litro</span>
+                                <p class="der">s/.<span id="subtotal-refresh">8.00</span></p>
+                                <div class="linea"></div>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <div class="row">
+                                    <div class="col-6 d-flex dialog">
+                                        <span class="fa-solid fa-minus" id="decremento" onclick="decrementar('subtotal-refresh','num-refresh', 'valor-refresh')"></span>
+                                        <input type="text" class="form-control input" readonly id="num-refresh" value="0">
+                                        <span class="fa-solid fa-plus" id="botonactivo" onclick="incrementar('subtotal-refresh','num-refresh', 'valor-refresh')"></span>
+                                    </div>
+                                    <div class="col-6 d-flex dialog">
+                                        <button class="enviarpedido" onclick="sumar('valor-refresh','num-refresh','refresh')">Agregar s/.<span
+                                                id="valor-refresh">0.00</span></button>
                                     </div>
                                 </div>
                             </div>

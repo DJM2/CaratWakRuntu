@@ -91,6 +91,7 @@ function pedido() {
     const preciopop = document.getElementById("mtotal-pop");
     preciopop.innerHTML = '\n' + precio;
 }
+
 function pedidol() {
     const valores = document.getElementById("valores").innerHTML;
     const valorespop = document.getElementById("valores-pop");
@@ -118,8 +119,8 @@ function wasa() {
 
     var mtotal = document.getElementById("mtotal-pop").innerHTML.trim();
 
-    var telefono = "51921135755";
-    var mensaje = "Hola Pikol, mi pedido es el siguiente:\n" + valores + "\n\nTotal: " + mtotal;
+    var telefono = "51991555007";
+    var mensaje = "Hola Waka Runtu, mi pedido es el siguiente:\n" + valores + "\n\nTotal: " + mtotal;
     var url = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
     window.open(url);
 }
